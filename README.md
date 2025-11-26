@@ -45,16 +45,15 @@ Angular  •  React  •  Vue  •  PostgreSQL  •  HTML5  •  CSS3
 
 ## 📊 GitHub Activity
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=AndreeSalazar&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" height="170"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AndreeSalazar&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" height="170"/>
-</div>
+<p align="center">
+  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=AndreeSalazar&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+  <img width="48%" src="https://github-readme-streak-stats.herokuapp.com?user=AndreeSalazar&theme=tokyonight&hide_border=true" />
+</p>
 
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=AndreeSalazar&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
-</div>
-
----
+<p align="center">
+  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AndreeSalazar&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
+  <img width="48%" src="https://github-readme-activity-graph.vercel.app/graph?username=AndreeSalazar&theme=tokyo-night&hide_border=true&area=true" />
+</p>
 
 ## 🚀 Featured Projects
 
