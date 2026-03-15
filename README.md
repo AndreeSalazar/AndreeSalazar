@@ -1,15 +1,15 @@
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00D9FF&center=true&vCenter=true&width=800&lines=Systems+Software+Engineer;OS+%26+Compiler+Developer;6%2B+Years+Building+Low-Level+Systems;Rust+%7C+C%2B%2B+%7C+ASM+%7C+CUDA+%7C+Vulkan;Creator+of+FastOS+%26+ADead-BIB+Compiler;1M%2B+Entities+%40+75+FPS+GPU+Simulation" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=26&pause=1000&color=00D9FF&center=true&vCenter=true&width=900&lines=Compiler+Developer+%26+OS+Architect;Creator+of+FastOS+%7C+ADead-BIB+%7C+PyDead-BIB;Python+→+x86-64+Native+%7C+0.305ms+%7C+No+Runtime;No+LLVM.+No+GCC.+No+Runtime.+No+GIL.;1M%2B+Entities+%40+75+FPS+GPU+Simulation;Rust+%7C+C%2B%2B+%7C+ASM+%7C+CUDA+%7C+Vulkan;Binary+Is+Binary+💀🦈" alt="Typing SVG" />
 </div>
 
 <h1 align="center">👋 Eddi Andreé Salazar Matos</h1>
 
 <p align="center">
-  <strong>Systems Software Engineer | OS & Compiler Developer</strong>
+  <strong>Compiler Developer & OS Architect</strong>
   <br/>
-  <em>Building operating systems, compilers, and high-performance GPU engines from scratch</em>
+  <em>Building compilers, operating systems, and GPU engines from scratch — no LLVM, no GCC, no frameworks</em>
   <br/>
-  <sub>Lima, Perú 🇵🇪 | 6+ years in Systems R&D (2019-2025)</sub>
+  <sub>Lima, Perú 🇵🇪 | 6+ years Systems R&D | Binary Is Binary 💀🦈</sub>
 </p>
 
 <p align="center">
@@ -29,48 +29,115 @@
 
 ---
 
+## 💀 The Ecosystem — Dead-BIB Family
+
+> *"Binary Is Binary — no runtime, no intermediaries, no excuses"*
+
+| Project | Language | Output | Key Achievement |
+|---------|----------|--------|-----------------|
+| **ADead-BIB v8.0** | C / C++ | x86-64 native | 354,134 lines proven IR |
+| **PyDead-BIB v4.0** | Python | x86-64 native | 0.305ms · no CPython · no GIL |
+| **FastOS v4.0** | C / ASM | Bare metal | 89KB kernel · boots in QEMU |
+| **Metal-Dead** | Python | Native AI | 0.60MB AI · no PyTorch |
+
+---
+
+## 🆕 PyDead-BIB v4.0 — JIT Killer
+
+> **Python → x86-64 native. No CPython. No LLVM. No GCC. No runtime. No GIL.**
+
+```
+pyb run archivo.py    # compile → RAM → execute → 0.305ms
+```
+
+| | CPython 3.13 | PyPy 7.3 | Nuitka | **PyDead-BIB** |
+|---|---|---|---|---|
+| Runtime | ❌ 30MB | ❌ 200MB | ❌ 8MB | ✅ **0 bytes** |
+| GIL | ❌ | ❌ | ❌ | ✅ **eliminated** |
+| No LLVM/GCC | ✅ | ✅ | ❌ | ✅ |
+| AVX2 SIMD | ❌ | ❌ | ❌ | ✅ **auto** |
+| UB compile-time | ❌ | ❌ | ❌ | ✅ **13+ types** |
+| Hello World | 30MB | 200MB | 8MB | **~2KB** |
+| Startup | ~50ms | ~2000ms | ~10ms | **0.305ms** |
+
+**JIT Killer v2.0:**
+```
+"The CPU doesn't think — it already knows.
+ The RAM doesn't wait — it already receives."
+
+Pre-resolved dispatch table → instant image → VirtualAlloc → JMP
+CPU features: AVX2 ✓ SSE4.2 ✓ BMI2 ✓
+GPU: RTX 3060 → 24,119 GFLOPS from compiled Python
+86/86 tests PASS
+```
+
+→ **[github.com/AndreeSalazar/PyDead-BIB](https://github.com/AndreeSalazar/PyDead-BIB)**
+
+---
+
+## 🖥️ FastOS — OS from Scratch
+
+```
+FastOS v4.0 — QEMU boot:
+
+CPU: AuthenticAMD ✅
+BG:  KERNEL Ring0 APPROVE ✅
+AVX2 SSE4.2 AES ✅
+PIC OK  PIT 100hz ✅
+
+MBR:    512 bytes (FASM)
+Kernel: 65,536 bytes (C99) ← 64KB kernel
+Image:  10,485,760 bytes
+```
+
+16→256 bit gradual CPU wake — no Linux, no Windows — bare metal.
+
+---
+
 ## 🚀 What I Build
 
 <table>
 <tr>
 <td width="50%">
 
-### 🖥️ **Operating Systems**
-- **FastOS** (2019-2026) - Complete OS from scratch
-- Custom bootloader (GPU-First, Binary-First)
-- Kernel: memory management, scheduling, interrupts
-- Full stack: ADead-BIB + Rust + wgpu
+### ⚡ Compilers & Toolchains
+- **ADead-BIB** — C/C++ → x86-64 native
+- **PyDead-BIB** — Python → x86-64 native
+- No LLVM. No GCC. No linker. No runtime.
+- IR ADeadOp SSA — own design
+- PE / ELF / FastOS .po output
 
 </td>
 <td width="50%">
 
-### ⚡ **Compilers & Toolchains**
-- **ADead-BIB** - x86-64 native code compiler
-- **ADead-GPU** - GPU-focused deterministic compiler
-- **Zom** - ADead-BIB + ROCm/HIP integration
-- PE/ELF generation, FFI, deterministic runtimes
+### 🖥️ Operating Systems
+- **FastOS** (2019-2026) — complete OS
+- Custom bootloader (FASM)
+- 64KB C99 kernel
+- Memory, scheduling, interrupts
+- Boots in QEMU ✅
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-### 🎮 **GPU Computing & Graphics**
+### 🎮 GPU Computing & Graphics
 - **GPU-Driven Sim**: 1M entities @ 75 FPS
-- **REACTOR**: Vulkan framework (98% less boilerplate)
+- **REACTOR**: Vulkan (98% less boilerplate)
 - **EPICX**: DirectX 12 framework
-- **Game Engine X**: Full DX12 game engine
-- CUDA kernels, compute shaders, deterministic simulation
+- CUDA kernels, compute shaders
+- RTX 3060: 24,119 GFLOPS
 
 </td>
 <td width="50%">
 
-### 🔥 **Performance Engineering**
-- **PyASM Trace Engine**: 40x Python speedups
-- SIMD (AVX2), RDTSC timing (nanosecond precision)
-- Branchless optimization, cache-friendly layouts
-- Game engines (4 games: platformer, raycaster, fighter)
-- Structure of Arrays, memory coalescing
+### 🔥 Performance Engineering
+- SIMD AVX2 auto-vectorization
+- JIT Killer v2.0 — 0.305ms
+- UB detection at compile time
+- No GC, no runtime overhead
+- Branchless, cache-friendly, deterministic
 
 </td>
 </tr>
@@ -81,26 +148,34 @@
 ## 💼 Professional Experience
 
 ```rust
-struct Career {
-    role: "Systems Software Engineer (Independent R&D)",
-    period: "2019 - 2025 (6 years)",
-    focus: vec![
-        "Operating Systems Development",
-        "Compiler & Toolchain Engineering", 
-        "GPU Computing & Graphics",
-        "Performance Optimization",
+struct EddI {
+    title:  "Compiler Developer & OS Architect",
+    years:  "6+ years (2019-2026)",
+    location: "Lima, Perú 🇵🇪",
+    
+    compilers_built: vec![
+        "ADead-BIB v8.0 — C/C++ → x86-64 (354K lines)",
+        "PyDead-BIB v4.0 — Python → x86-64 (0.305ms)",
+        "ADead-GPU — GPU deterministic compiler",
+        "Zom — ADead-BIB + ROCm/HIP",
     ],
-    achievements: vec![
-        "Built complete OS (FastOS) with custom bootloader + kernel",
-        "Created production compiler generating x86-64 machine code",
-        "1M+ entity GPU simulation @ 75 FPS deterministic",
-        "40x Python speedups with Rust+ASM hybrid engine",
-        "36+ public repositories spanning systems → full-stack",
+    
+    os_built: vec![
+        "FastOS v4.0 — complete OS, boots in QEMU",
+        "Custom bootloader (FASM, 512 bytes MBR)",
+        "64KB C99 kernel — memory, scheduler, IRQ",
     ],
+    
+    gpu_achievements: vec![
+        "1,000,000 entities @ 75 FPS (RTX 3060)",
+        "24,119 GFLOPS from compiled Python",
+        "REACTOR: Vulkan 98% less boilerplate",
+        "EPICX: DirectX 12 framework",
+    ],
+    
+    philosophy: "Binary Is Binary — no intermediaries",
 }
 ```
-
-**+ 6 years** as Office Assistant at EXTRA GAS S.A. (2018-2024) - Demonstrated professionalism and work ethic
 
 ---
 
@@ -108,38 +183,35 @@ struct Career {
 
 <div align="center">
 
-### 🔧 **Systems & Low-Level**
+### 🔧 Compilers & Low-Level
 ```
-Rust (Advanced) • C/C++ • Assembly x86-64 • LLVM IR
-Operating Systems • Bootloaders • Kernels • Memory Management
-Compilers (Lexer/Parser/Codegen) • PE/ELF Binaries • Linking
-```
-
-### 🎮 **GPU & Graphics**
-```
-Vulkan API • DirectX 12 • wgpu • CUDA
-Compute Shaders • SPIR-V • Pipelines • Instanced Rendering
-Real-time Procedural Generation • GPU-Driven Architecture
+Rust (Advanced) • C / C++ • Assembly x86-64
+Lexer / Parser / AST / IR / Codegen
+PE / ELF binary generation — no linker
+ISA x86-64 encoding • FASM • NASM
 ```
 
-### ⚡ **Performance & Optimization**
+### 🖥️ Operating Systems
 ```
-SIMD (SSE/AVX/AVX2) • RDTSC Profiling • Branchless Programming
-Cache Optimization • Memory Alignment • Vectorization
-Structure of Arrays • Memory Coalescing • Deterministic Computing
-```
-
-### 💻 **Full-Stack Development**
-```
-TypeScript • Python (pandas/PyO3) • JavaScript • Java
-Angular • React • Vue • Node.js • PostgreSQL
-Data Analysis • ETL Pipelines • E-commerce • Observability Systems
+Bootloaders (FASM) • Kernels (C99)
+Memory Management • Scheduling • Interrupts
+x86-64 Long Mode • CPUID • APIC • PIT
+Bare metal — no Linux — no Windows dependency
 ```
 
-### 🔨 **DevOps & Tools**
+### 🎮 GPU & Graphics
 ```
-Git • Cargo • CMake • Docker • CI/CD • NASM
-Makefile • pnpm • Jupyter • Build Systems
+Vulkan API • DirectX 12 • CUDA • wgpu
+Compute Shaders • SPIR-V • HLSL • GLSL
+GPU-Driven Architecture • Real-time Simulation
+```
+
+### ⚡ Performance
+```
+SIMD (AVX2 / SSE4.2 / BMI2)
+JIT Killer v2.0 — VirtualAlloc executor
+UB Detection — compile time
+Deterministic execution • Cache optimization
 ```
 
 </div>
@@ -148,312 +220,92 @@ Makefile • pnpm • Jupyter • Build Systems
 
 ## 🏆 Featured Projects
 
-### 🖥️ **Operating System Development**
+### 💀 Dead-BIB Compiler Family
 
 <details>
-<summary><b>FastOS - Complete OS from Scratch (2019-2026)</b></summary>
+<summary><b>PyDead-BIB v4.0 — Python Native Compiler</b> 🆕</summary>
 
-**The Main Achievement** - A fully functional operating system built from zero
+**[github.com/AndreeSalazar/PyDead-BIB](https://github.com/AndreeSalazar/PyDead-BIB)**
 
-**Stack:** Rust, Assembly x86-64, wgpu, ADead-BIB, QEMU
+First Python compiler generating native x86-64 without CPython, LLVM, GCC, or any runtime.
 
-**What it includes:**
-- ✅ Custom bootloader (GPU-First, Binary-First OS)
-- ✅ Complete kernel: paging, heap allocation, scheduling
-- ✅ Interrupt handling (IDT, ISRs, IRQ)
-- ✅ Process management (multitasking, context switching)
-- ✅ System calls interface
-- ✅ Graphics stack (wgpu integrated from kernel)
-- ✅ Full development stack: ADead-BIB language + Rust runtime
+- **0.305ms** startup vs CPython's 50ms
+- **2KB** Hello World vs 30MB CPython runtime  
+- **JIT Killer v2.0**: pre-resolved dispatch, instant image, VirtualAlloc executor
+- **13+ UB types** detected at compile time
+- **AVX2 SIMD** auto-vectorization
+- **CUDA + Vulkan** GPU dispatch from Python
+- **24,119 GFLOPS** RTX 3060 from compiled Python
+- **86/86 tests** PASS
+- **Techne License v1.0** — free personal/OSS, 10% royalty commercial
 
-**Why it matters:** Demonstrates deep understanding of computer architecture, hardware control, and systems programming at the most fundamental level.
+```
+"The CPU doesn't think — it already knows.
+ The RAM doesn't wait — it already receives."
+```
+
+</details>
+
+<details>
+<summary><b>ADead-BIB v8.0 — C/C++ Native Compiler</b></summary>
+
+**[github.com/AndreeSalazar/ADead-BIB](https://github.com/AndreeSalazar/ADead-BIB)**
+
+Complete C/C++ compiler generating machine code without GCC, LLVM, or external linkers.
+
+- **354,134 lines** of proven compiler infrastructure
+- **IR ADeadOp SSA** — own design
+- PE (Windows) + ELF (Linux) + FastOS .po output
+- Full OOP: classes, inheritance, polymorphism, vtables
+- UB detector: 21+ types
+- 16 → 256 bit targets (SSE → AVX2)
+- Binary Guardian stamp
+
+</details>
+
+<details>
+<summary><b>FastOS v4.0 — Complete OS from Scratch</b></summary>
+
+OS built from zero — boots in QEMU.
+
+- Custom bootloader (FASM, 512 bytes MBR)
+- 64KB C99 kernel
+- Memory management, scheduler, interrupts
+- AVX2 SSE4.2 AES detection at boot
+- 16→256 bit gradual CPU wake
+- Target: bare metal without Linux or Windows
 
 </details>
 
 ---
 
-### ⚡ **Compiler Engineering**
+### 🚀 GPU Computing
 
 <details>
-<summary><b>ADead-BIB - x86-64 Native Code Compiler (2023-Present)</b> ⭐ 1 star</summary>
+<summary><b>GPU-Driven Massive Simulation — 1M Entities @ 75 FPS</b></summary>
 
-**Repository:** [github.com/AndreeSalazar/ADead-BIB](https://github.com/AndreeSalazar/ADead-BIB)
+**[github.com/AndreeSalazar/GPU-Driven](https://github.com/AndreeSalazar/GPU-Driven)**
 
-Complete compiler generating machine code directly without external assemblers/linkers
+| Entities | Sim Time | FPS |
+|----------|----------|-----|
+| 100,000 | ~0.05ms | 120+ |
+| 500,000 | ~0.10ms | 100 |
+| **1,000,000** | **~0.14ms** | **75** |
 
-**Features:**
-- Direct PE (Windows) and ELF (Linux) binary generation
-- Full OOP support (classes, inheritance, polymorphism, vtables)
-- Python FFI for seamless interop with Python ecosystem  
-- Deterministic runtime for perfect synchronization
-- 70+ built-in functions, module system
-- Minimal executables: 1.5 KB (Hello World) to 350 KB (full apps)
-- 8-10x performance improvements
-
-**Tech:** Rust, LLVM IR, x86-64 Assembly
+Deterministic: same input → same output guaranteed.
 
 </details>
 
 <details>
-<summary><b>ADead-GPU - GPU-Focused Deterministic Compiler (2024-2025)</b> ⭐ 1 star</summary>
-
-**Repository:** [github.com/AndreeSalazar/ADead-GPU](https://github.com/AndreeSalazar/ADead-GPU)
-
-Specialized compiler for deterministic GPU code generation with noise reduction
-
-**Tech:** C++, Rust, CUDA
-
-</details>
-
-<details>
-<summary><b>Zom - ADead-BIB + ROCm Integration (2024-2025)</b> ⭐ 1 star</summary>
-
-**Repository:** [github.com/AndreeSalazar/Zom](https://github.com/AndreeSalazar/Zom)
-
-ADead-BIB compiler with AMD GPU computing (ROCm/HIP)
-
-**Tech:** Rust, HIP, ROCm
-
-</details>
-
----
-
-### 🚀 **GPU Computing & Massive Simulation**
-
-<details>
-<summary><b>GPU-Driven Massive Simulation Engine (2024-2025)</b></summary>
-
-**Repository:** [github.com/AndreeSalazar/GPU-Driven](https://github.com/AndreeSalazar/GPU-Driven)
-
-Simulate **millions of entities in real-time** with deterministic behavior
-
-**Achievements:**
-- 🔥 **1,000,000 entities @ 75 FPS** on RTX 3060
-- ⚡ Simulation time: 0.14ms (GPU compute)
-- ✅ Deterministic: same input → same output guaranteed
-- 🎯 GPU-driven architecture: GPU thinks, CPU orchestrates
-
-**Performance Benchmarks:**
-| Entities | Sim Time (GPU) | Frame Time | FPS |
-|----------|----------------|------------|-----|
-| 100,000  | ~0.05ms       | ~8ms       | 120+|
-| 500,000  | ~0.10ms       | ~10ms      | 100 |
-| 1,000,000| ~0.14ms       | ~13ms      | 75  |
-
-**Tech:** Rust, CUDA, wgpu, Assembly (timing), real-time profiling
-
-</details>
-
-<details>
-<summary><b>PyASM Trace Engine - Python Acceleration (2024-2025)</b></summary>
-
-**Repository:** [github.com/AndreeSalazar/Tracer_para_Python](https://github.com/AndreeSalazar/Tracer_para_Python)
-
-Hybrid Python-Rust-ASM engine achieving **20-40x speedups**
-
-**Features:**
-- Automatic offloading of Python hot paths to native code
-- SIMD (AVX2) vectorized operations
-- RDTSC cycle-accurate timing (nanosecond precision)
-- PyO3 bindings with decorator API (@offload, @trace)
-
-**Real Benchmarks (100K elements, 100 iterations):**
-- Python: 915.9 ms
-- Rust: 22.6 ms → **40.5x speedup**
-- ASM SIMD: 44.1 ms → **20.8x speedup**
-
-**Tech:** Rust, Python (PyO3), Assembly (NASM), AVX2
-
-</details>
-
----
-
-### 🎮 **Graphics Frameworks & Game Engines**
-
-<details>
-<summary><b>REACTOR - Vulkan Framework (2024-2025)</b></summary>
-
-**Repository:** [github.com/AndreeSalazar/REACTOR-Framework-for-Vulkan-](https://github.com/AndreeSalazar/REACTOR-Framework-for-Vulkan-)
-
-Ultra-lightweight Vulkan framework reducing boilerplate by **98%**
-
-**Features:**
-- Visual node editor (Blender Geometry Nodes style)
-- Real-time procedural generation (Perlin noise, mesh extrusion, materials)
-- Ultra-optimized: 150-330 KB executables, 0.36s load time
-- Zero heap allocations during startup
-- Hot-reload shaders (SPIR-V compilation)
-
-**Tech:** Rust, Vulkan API, SPIR-V, Qt
-
-</details>
-
-<details>
-<summary><b>EPICX - DirectX 12 Framework (2024-2025)</b></summary>
-
-**Repository:** [github.com/AndreeSalazar/EPICX-FRAMEWORK-DirectX12](https://github.com/AndreeSalazar/EPICX-FRAMEWORK-DirectX12)
-
-High-level abstractions for DirectX 12 on Windows
-
-**Tech:** C++, DirectX 12, HLSL
-
-</details>
-
-<details>
-<summary><b>Game Engine X - Full DX12 Engine (2023-2024)</b></summary>
-
-**Repository:** [github.com/AndreeSalazar/Game_Engine_X](https://github.com/AndreeSalazar/Game_Engine_X)
-
-Complete game engine built with DirectX 12 for Windows
-
-**Tech:** C++, DirectX 12, HLSL, CMake
-
-</details>
-
-<details>
-<summary><b>VULKAN-FULL - Cross-Platform Engine (2024-2025)</b></summary>
-
-**Repository:** [github.com/AndreeSalazar/VULKAN-FULL](https://github.com/AndreeSalazar/VULKAN-FULL)
-
-Multi-platform graphics engine using Vulkan for any OS
-
-**Tech:** C++, Vulkan API, GLSL, CMake
-
-</details>
-
-<details>
-<summary><b>Minimalist Vulkan Render Engine (2024-Present)</b></summary>
-
-**Repository:** [github.com/AndreeSalazar/Motor-de-Render-Minimalista](https://github.com/AndreeSalazar/Motor-de-Render-Minimalista)
-
-3D rendering engine built from scratch with C++ and Vulkan
-
-**Features:**
-- Complete graphics pipeline
-- Real-time rendering capabilities
-- Low-level GPU programming mastery
-
-**Tech:** C++, Vulkan API, GLSL, CMake
-
-</details>
-
-<details>
-<summary><b>Game-Rust-ASM - Deterministic 2D Game Engine (2023-2024)</b></summary>
-
-**Repository:** [github.com/AndreeSalazar/Game-Rust-ASM](https://github.com/AndreeSalazar/Game-Rust-ASM)
-
-**4 complete games** demonstrating different techniques:
-
-1. **Physics 2D** - Platformer with custom physics
-2. **Raycaster** - DOOM-style engine with DDA algorithm
-3. **Massive Sim** - 5,000+ entities @ 60 FPS
-4. **Fighting** - Frame-perfect input, hitbox system
-
-**Architecture:**
-- Rust orchestrates, ASM executes hot paths
-- RDTSC timing (nanosecond precision)
-- SIMD collision detection
-- Custom ECS (Entity Component System)
-- Fixed timestep deterministic @ 60 FPS
-- Software rendering (no GPU dependency)
-
-**Tech:** Rust, NASM x86-64, hecs, winit, softbuffer
-
-</details>
-
----
-
-### 💻 **Full-Stack & Data Engineering**
-
-<details>
-<summary><b>Portfolio Java - Full-Stack Hybrid (2024-2025)</b> ⭐ 1 star</summary>
-
-**Repository:** [github.com/AndreeSalazar/Portfolio_Java](https://github.com/AndreeSalazar/Portfolio_Java)
-
-Full-stack architecture combining Python + Java + Rust
-
-**Tech:** Java, Python, Rust, PostgreSQL
-
-</details>
-
-<details>
-<summary><b>Portfolio Python - Data Analyst Stack (2024-2025)</b> ⭐ 1 star</summary>
-
-**Repository:** [github.com/AndreeSalazar/Portfolio_Python](https://github.com/AndreeSalazar/Portfolio_Python)
-
-Complete data analysis portfolio with ETL pipelines and visualization
-
-**Tech:** Python, pandas, numpy, Jupyter, matplotlib
-
-</details>
-
-<details>
-<summary><b>Observabilidad-desde-Cero (2025)</b></summary>
-
-**Repository:** [github.com/AndreeSalazar/Observabilidad-desde-Cero](https://github.com/AndreeSalazar/Observabilidad-desde-Cero)
-
-Complete observability system built from scratch with Rust + Java
-
-**Tech:** Rust, Java, HTML
-
-</details>
-
-<details>
-<summary><b>E-commerce pnpm (2024-2025)</b></summary>
-
-**Repository:** [github.com/AndreeSalazar/ecommerce-pnpm](https://github.com/AndreeSalazar/ecommerce-pnpm)
-
-Full e-commerce application with modern monorepo structure
-
-**Tech:** TypeScript, pnpm, Node.js, React
-
-</details>
-
----
-
-### 🔧 **Developer Tools**
-
-<details>
-<summary><b>Visual Editor - Node-Based Development (2024-2025)</b> ⭐ 1 star</summary>
-
-**Repository:** [github.com/AndreeSalazar/visual-editor](https://github.com/AndreeSalazar/visual-editor)
-
-Visual code editor for DEV and UI generalists
-
-**Tech:** JavaScript, Node.js
-
-</details>
-
-<details>
-<summary><b>Ultra-C++ - Code Generator (2024-2025)</b></summary>
-
-**Repository:** [github.com/AndreeSalazar/Ultra-C-](https://github.com/AndreeSalazar/Ultra-C-)
-
-Automatic C++ file generator (cpp + header) for simplified development
-
-**Tech:** C++
-
-</details>
-
-<details>
-<summary><b>Navegador-GPU - GPU-First Browser (2024-2025)</b></summary>
-
-**Repository:** [github.com/AndreeSalazar/Navegador-GPU](https://github.com/AndreeSalazar/Navegador-GPU)
-
-Experimental browser with GPU-first rendering acceleration
-
-**Tech:** Rust, GPU rendering
-
-</details>
-
-<details>
-<summary><b>Omega Visual Editor (2024)</b></summary>
-
-**Repository:** [github.com/AndreeSalazar/Omega-Visual-Semantic-Node-Based-Code-Editor](https://github.com/AndreeSalazar/Omega-Visual-Semantic-Node-Based-Code-Editor)
-
-Node-based visual code editor with semantic understanding
-
-**Tech:** Python, Qt, Node System
+<summary><b>REACTOR — Vulkan Framework (98% less boilerplate)</b></summary>
+
+**[github.com/AndreeSalazar/REACTOR-Framework-for-Vulkan-](https://github.com/AndreeSalazar/REACTOR-Framework-for-Vulkan-)**
+
+- Visual node editor (Blender-style)
+- 150-330KB executables
+- 0.36s load time
+- Zero heap allocations at startup
+- Hot-reload SPIR-V shaders
 
 </details>
 
@@ -470,56 +322,38 @@ Node-based visual code editor with semantic understanding
   <img width="70%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AndreeSalazar&layout=compact&theme=react&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=C9D1D9&langs_count=10&hide=jupyter%20notebook" alt="Top Languages"/>
 </p>
 
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AndreeSalazar&theme=react-dark&hide_border=true&area=true&bg_color=0D1117&color=00D9FF&line=00D9FF&point=C9D1D9" alt="Activity Graph"/>
-</p>
-
 ---
 
-## 🎓 Education & Background
+## 🎓 Background
 
-**🎓 Universidad Nacional Federico Villarreal** (Currently studying)
-- 3rd Cycle - Computer Engineering (Ingeniería Informática)
-- Faculty of Electronic and Computer Engineering
-- Admission: Special modality (Law 29973) - Resolution Nº 1701-2023-UNFV (May 16, 2023)
+**Self-Directed Systems R&D (2019-2026)**
+- 6+ years intensive compiler + OS + GPU development
+- 50+ public repositories
+- Production-quality deliverables
 
-**📚 Self-Directed Systems Programming (2019-2025)**
-- 6+ years intensive R&D in operating systems, compilers, GPU computing
-- Validated through 36+ production-quality open source projects
-- Equivalent to senior-level professional experience
-
-**📜 Technical Certifications**
-- Graphic Design - Computer Science Specialization (CETPRO Márquez, 600 hours)
-- Basic Electronics (ITEG, 120 hours)  
-- Computer Assembly (ACRESOFT, 24 hours)
+**Universidad Nacional Federico Villarreal**
+- Computer Engineering (In Progress)
+- Admission: Special modality (Law 29973)
 
 ---
 
 ## 💡 What Makes Me Different
 
-```typescript
-const unique_value = {
-  depth: "Not just frameworks - built an OS, compiler, and GPU engines from scratch",
-  breadth: "36+ repos spanning systems programming → full-stack development",
-  proven: "6 years of consistent R&D with production-quality deliverables",
-  results: [
-    "1M entities @ 75 FPS GPU simulation",
-    "40x Python speedups with hybrid Rust-ASM",
-    "Complete OS with custom bootloader + kernel",
-    "Production compiler generating native x86-64 code"
-  ],
-  mindset: "Solve problems at the root level, optimize for both humans and machines"
-};
 ```
+Everyone uses LLVM.        I don't.
+Everyone uses GCC.         I don't.
+Everyone uses runtimes.    I don't.
+Everyone keeps the GIL.    I removed it.
+Everyone uses JIT to learn. Mine already knows.
 
----
+354,134 lines of proven compiler infrastructure.
+89KB OS kernel that boots.
+Python executing in 0.305ms.
+1M entities at 75 FPS.
 
-## 🌱 Currently
-
-- 🔭 Actively developing FastOS and ADead-BIB compiler ecosystem
-- 🌐 Exploring WebAssembly for high-performance web applications
-- 📚 Deepening expertise in GPU architecture and parallel computing
-- 💼 **Open to full-time opportunities** in Systems Engineering, Compiler Development, Graphics Programming, or Performance-Critical Applications
+1 developer. Lima, Perú. 🇵🇪
+Binary Is Binary. 💀🦈
+```
 
 ---
 
@@ -527,28 +361,27 @@ const unique_value = {
 
 <div align="center">
 
-[![Portfolio Website](https://img.shields.io/badge/🌐_Portfolio-Visit_Live_Demos-00D9FF?style=for-the-badge&labelColor=000000)](https://andreesalazar.github.io/PersonalPortafolio)
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-Live_Demos-00D9FF?style=for-the-badge&labelColor=000000)](https://andreesalazar.github.io/PersonalPortafolio)
 [![Email](https://img.shields.io/badge/📧_Email-eddi.salazar.dev@gmail.com-FF6B6B?style=for-the-badge&labelColor=000000)](mailto:eddi.salazar.dev@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-Connect-0077B5?style=for-the-badge&labelColor=000000)](https://linkedin.com/in/andreé-salazar-0b1b81304)
 [![YouTube](https://img.shields.io/badge/▶️_YouTube-Tech_Demos-FF0000?style=for-the-badge&labelColor=000000)](https://www.youtube.com/@Qdantex)
-[![Instagram](https://img.shields.io/badge/📸_Instagram-qmachus-E4405F?style=for-the-badge&labelColor=000000)](https://www.instagram.com/qmachus/)
+
+**💼 Open to: Compiler Engineering · OS Development · GPU Computing · Performance Engineering**
 
 </div>
 
 ---
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=AndreeSalazar&color=00D9FF&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views"/>
-  
-  <br/><br/>
-  
-  **💼 Available for Full-Time Positions & Technical Collaborations**
-  
-  <br/>
-  
-  <sub>⭐ If you find my work interesting, star some repos and let's build something amazing together!</sub>
-  
-  <br/><br/>
-  
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=00D9FF&height=100&section=footer" alt="Footer Wave"/>
+
+```
+ADead-BIB 💀 C/C++  →  PyDead-BIB 💀 Python  →  FastOS 💀 Bare Metal
+                    IR ADeadOp SSA
+                   Binary Is Binary
+              Eddi Andreé Salazar Matos
+                   Lima, Perú 🇵🇪
+```
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=00D9FF&height=100&section=footer" alt="Footer"/>
+
 </div>
