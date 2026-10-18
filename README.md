@@ -1,8 +1,17 @@
 # Eddi Andree Salazar Matos
 
-**Compilers and operating systems, written from scratch. No LLVM, no GCC.**
+**Operating systems, firmware and compilers, written from scratch. No LLVM, no GCC.**
 
 Lima, Peru · [Portfolio](https://andreesalazar.github.io/Personal-Portafolio/) · [Email](mailto:eddi.salazar.dev@gmail.com) · [LinkedIn](https://linkedin.com/in/andre%C3%A9-salazar-0b1b81304) · [YouTube](https://www.youtube.com/@Qdantex)
+
+---
+
+## Featured
+
+| | Project | What it proves |
+|---|---|---|
+| 1 | **[BMO-X](https://github.com/AndreeSalazar/BMO-X-x86-64)** | A full OS of my own: UEFI boot, microkernel, drivers and native compilers, running on a real Ryzen |
+| 2 | **[TALK-CPU](https://github.com/AndreeSalazar/TALK-CPU-x86-64)** | x86-64 machine code written by hand in `.hex`, booted on my own PC |
 
 ---
 
@@ -28,6 +37,22 @@ and it is why COBOL never died.
 
 Source, docs and build instructions are public under Apache-2.0:
 **[github.com/AndreeSalazar/BMO-X-x86-64](https://github.com/AndreeSalazar/BMO-X-x86-64)**
+
+---
+
+## [TALK-CPU](https://github.com/AndreeSalazar/TALK-CPU-x86-64) — hand-written x86-64, booted on real hardware
+
+No compiler, no assembler: the instructions are written byte by byte in `.hex`.
+A minimal UEFI bridge loads them from FAT32, calls `ExitBootServices` and jumps
+into my own 64-bit code, which draws straight to the framebuffer.
+
+On **October 18, 2026** it booted on the target machine — an **MSI A320M-A PRO MAX
+with a Ryzen 5 5600X** — on the first physical attempt:
+
+<img src="https://raw.githubusercontent.com/AndreeSalazar/TALK-CPU-x86-64/main/EVIDENCIAS/PC_REAL/PRIMER_ARRANQUE/02-saludo-metal64.png" alt="Hand-written x86-64 code printing on the real Ryzen machine" width="480">
+
+It also ships **Flappy Metal**, a playable game (gravity, pipes, collisions,
+score) in **4,088 bytes** of hand-written machine code, running in QEMU.
 
 ---
 
