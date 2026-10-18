@@ -2,11 +2,11 @@
 
 **Compilers and operating systems, written from scratch. No LLVM, no GCC.**
 
-Lima, Peru · [Portfolio](https://andreesalazar.github.io/PersonalPortafolio) · [Email](mailto:eddi.salazar.dev@gmail.com) · [LinkedIn](https://linkedin.com/in/andreé-salazar-0b1b81304) · [YouTube](https://www.youtube.com/@Qdantex)
+Lima, Peru · [Portfolio](https://andreesalazar.github.io/Personal-Portafolio/) · [Email](mailto:eddi.salazar.dev@gmail.com) · [LinkedIn](https://linkedin.com/in/andre%C3%A9-salazar-0b1b81304) · [YouTube](https://www.youtube.com/@Qdantex)
 
 ---
 
-## BMO-X — a bare-metal system that runs COBOL, C and Ada on real hardware
+## [BMO-X](https://github.com/AndreeSalazar/BMO-X-x86-64) — a bare-metal system that runs COBOL, C and Ada on real hardware
 
 My current work. A microkernel with a **frozen surface of three syscalls**, a
 capability-based security model, and three native compilers — all written in
@@ -26,11 +26,8 @@ It boots on an **AMD Ryzen 5 5600X**, not in an emulator, and occupies
 and confirmed on silicon. That is the primitive banking software is built on,
 and it is why COBOL never died.
 
-<!-- TODO Eddi: enlace al video del Ryzen arrancando -->
-▶ *[Video: booting and running a banking batch job](VIDEO_URL)*
-
-The source is private under a source-available commercial license.
-Documentation, examples and binaries are public.
+Source, docs and build instructions are public under Apache-2.0:
+**[github.com/AndreeSalazar/BMO-X-x86-64](https://github.com/AndreeSalazar/BMO-X-x86-64)**
 
 ---
 
@@ -62,10 +59,11 @@ to look like they work.
 
 | Project | What it is |
 |---|---|
-| **[ADead-BIB](https://github.com/AndreeSalazar/ADead-BIB)** | C/C++ compiler emitting x86-64 directly. Own SSA IR, PE and ELF output, no external linker. |
+| **[ADead-BIB](https://github.com/AndreeSalazar/ADead-BIB)** | C99 compiler emitting x86-64 directly. Own IR, PE and ELF output, own linker for .dll/.so — no LLVM, GCC or NASM. |
+| **[UE5 Fast Startup Accelerator](https://github.com/AndreeSalazar/Proyecto-UE5-Fast-Startup-Accelerator)** | Rust CLI that reads Unreal Engine 5.0–5.8 assets without the editor. 8,865 assets hashed and cached in 813 ms. |
 | **[PyDead-BIB](https://github.com/AndreeSalazar/PyDead-BIB)** | Compiles a subset of Python to native x86-64 — no CPython, no LLVM, no runtime in the output binary. |
 | **[REACTOR](https://github.com/AndreeSalazar/REACTOR-Framework-for-Vulkan-)** | Vulkan framework with a visual node editor. Small executables, no heap allocation at startup. |
-| **[EPICX](https://github.com/AndreeSalazar/EPICX-FRAMEWORK-DirectX12)** | DirectX 12 framework. |
+| **[EPICX](https://github.com/AndreeSalazar/EPICX-FRAMEWORK-DirectX12)** | DirectX 12 framework in Rust with React-style components. 446 FPS average on an RTX 3060. |
 | **[ASM-BIB](https://github.com/AndreeSalazar/ASM-BIB)** | x86-64 assembler. |
 
 These are research projects, not products. They are public so the code can be
@@ -84,8 +82,8 @@ read and judged directly.
 
 **Languages**: Rust, C, C++, x86-64 assembly, Python, Java
 
-I've also built web work — Angular, TypeScript, React — which paid for the
-time to do the above.
+I also build web apps — React, Next.js, Angular, TypeScript, Spring Boot —
+for example **[ORBITA](https://github.com/AndreeSalazar/ORBITA)** (Next.js + Spring Boot gateway + Rust engine).
 
 ---
 
