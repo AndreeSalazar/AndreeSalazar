@@ -126,8 +126,6 @@ read and judged directly.
 **Independent systems R&D** — compilers, operating systems and GPU work,
 self-directed and built alone. The commit history is public.
 
-**Universidad Nacional Federico Villarreal** — Computer Engineering, in progress.
-
 ## Open to
 
 Compiler engineering · Systems and OS development · Graphics and GPU ·
